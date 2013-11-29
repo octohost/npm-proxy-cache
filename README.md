@@ -24,7 +24,11 @@ The first deploy will be normal - subsequant deploys will be screaming fast.
 This can be deployed as a container:
 ------------
 
-Build and launch this [Dockerfile](https://github.com/octohost/npm-proxy-cache/blob/master/Dockerfile):
+Build and launch this [Dockerfile](https://github.com/octohost/npm-proxy-cache/blob/master/Dockerfile) or pull it from the INDEX:
+
+`docker pull octohost/npm-proxy-cache`
+
+Then run it:
 
 `docker run -d -p 8080:8080 octohost/npm-proxy-cache`
 
