@@ -12,7 +12,7 @@
             "source_ami": "ami-806bf0b0",
             "instance_type": "c1.medium",
             "ssh_username": "ubuntu",
-            "ami_name": "npm-proxy-cache {{timestamp}}",
+            "ami_name": "npm-proxy-cache {{timestamp}}"
             }],
 
     "provisioners": [{
