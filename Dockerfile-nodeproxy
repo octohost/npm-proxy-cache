@@ -1,0 +1,10 @@
+FROM stackbrew/ubuntu:saucy
+
+RUN apt-get update
+RUN apt-get install -y software-properties-common --force-yes
+RUN add-apt-repository -y ppa:chris-lea/node.js
+RUN apt-get update
+RUN apt-get -y install nodejs git
+RUN npm config set proxy http://ip.address.here:8080/; npm config set https-proxy http://ip.address.here:8080/; npm config set strict-ssl false
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
